@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday 🎉</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #ff4d6d;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .photo-gallery img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .photo-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .letter {
+      text-align: left;
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 15px;
+      line-height: 1.7;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    .signature {
+      margin-top: 20px;
+      text-align: right;
+      font-style: italic;
+    }
+
+    button {
+      background: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background: #e63950;
+    }
+
+    #surprise {
+      display: none;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #ff4d6d;
+    }
+
+    @media (max-width: 500px) {
+      .photo-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Happy Birthday 💖</h1>
+    <p class="subtitle">For my most special person ✨</p>
+
+    <!-- PHOTO GALLERY -->
+    <div class="photo-gallery">
+      <img src="photo1.jpeg" alt="Memory 1">
+      <img src="photo2.jpeg" alt="Memory 2">
+      <img src="photo3.jpeg" alt="Memory 3">
+      <img src="photo4.jpeg" alt="Memory 4">
+    </div>
+
+    <!-- LETTER SECTION -->
+    <div class="letter">
+      Happy Birthday to my most comfortable human and to one of my most favourite favourite favourite person 🫀🫀🫀 that I have in my life. Can't believe that your 18 is starting 😋😋😋. I hope this special day brings you joy and I hope it finds you without anyone disturbing your peace 🛐. Always grateful to have you in my life, making it easier for me to laugh every time 🥹.<br><br>
+
+      I remember your card or letter, whatever that was, that said “My dearest Avani, I love you so much and words can't express how grateful and lucky I am to have you.” That small letter means so so so much to me and I want to say that I LOVE YOU MORE 💋.<br><br>
+
+      We have some memories that I’ll hold close forever 😘. No matter how far life takes us, you’ll always be that one friend who feels just right. You are someone I can blindly count on always 💗💗.<br><br>
+
+      I wish you nothing but happiness, peace, prosperity, and love over your life ✨️🧿.
+
+      <div class="signature">
+        Love you endlesslyyy future CA 🫡<br>
+        Your Sweetheart 💋<br>
+        - Avani
+      </div>
+    </div>
+
+    <!-- SURPRISE BUTTON -->
+    <button onclick="showMessage()">Click for a Surprise 🎁</button>
+    <p id="surprise">"You look just like a dream the prettiest girl I've ever seen"🛐</p>
+
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
